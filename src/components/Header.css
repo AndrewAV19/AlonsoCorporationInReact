@@ -24,7 +24,7 @@ header {
 }
 
 .menu-toggle {
-  display: none; /* Ocultamos el botón en pantallas grandes */
+  display: none; 
   background: #e3e8e8;
   border: none;
   color: rgb(14, 14, 14);
