@@ -3,24 +3,41 @@
   justify-content: space-around;
   align-items: flex-start; 
   margin: 0;
+  padding: 40px 20px;
   background-color: #eee8e8;
   width: 100%;
-  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+  flex-wrap: wrap;
+  gap: 20px; /* Espacio entre elementos */
 }
 
 .servicio {
   text-align: center;
   max-width: 300px;
   flex: 1;
-  margin: 0 20px;
-  box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el width y height */
+  box-sizing: border-box; 
+  background-color: #eee8e8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.servicio h2 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
-  color: #256cb7;
-  font-family: 'Arial', sans-serif;
+.servicio:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.servicio img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.servicio img:hover {
+  transform: scale(1.05);
 }
 
 .tech-list {
@@ -49,33 +66,20 @@
   height: 35px; 
 }
 
-.servicio img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  margin-bottom: 20px;
-}
-
-.servicio img:hover {
-  transform: scale(1.05);
-}
-
 @media (max-width: 768px) {
   .servicios {
     flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
-    padding: 20px; /* Añade un padding para mayor espacio en pantallas pequeñas */
+    align-items: center;
+    padding: 20px;
   }
 
   .servicio {
-    margin: 20px 0; /* Ajusta el margen para separar los elementos */
-    max-width: 100%; /* Asegura que los elementos no se salgan del contenedor */
+    margin: 20px 0;
+    max-width: 100%;
   }
 
   .servicio img {
-    max-width: 80%; /* Ajusta el tamaño máximo de la imagen en pantallas pequeñas */
+    max-width: 80%;
     height: auto;
   }
 }

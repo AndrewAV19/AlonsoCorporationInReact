@@ -1,7 +1,9 @@
 .nuestros-trabajos {
     padding: 40px 20px;
     background-color: #e3dcdc;
-    text-align: center; 
+    text-align: center;
+    width: 100%;
+    flex-wrap: wrap; 
   }
   
   .titulo {
