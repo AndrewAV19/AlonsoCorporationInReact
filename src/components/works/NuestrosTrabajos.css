@@ -55,4 +55,13 @@
     font-size: 1em;
     color: #666;
   }
+  .trabajo a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Mantiene el color del texto del enlace */
+  }
+  
+  .trabajo a:hover {
+    color: inherit; /* Mantiene el color del enlace al pasar el ratón */
+  }
+  
   
